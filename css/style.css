@@ -164,6 +164,13 @@ main .container .left-column, main .container .right-column{
     position: relative;
 }
 
+.italic{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+}
+
 .checked::after {
     content: "";
     position: absolute;
