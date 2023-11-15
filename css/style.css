@@ -74,7 +74,12 @@ main .container .left-column, main .container .right-column{
     white-space: nowrap;
 }
 
-
+@media (max-width: 768px) {
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
@@ -182,7 +187,7 @@ main .container .left-column, main .container .right-column{
 }
 
 #clearLocalStorageButton {
-    background-color: #3498db;
+    background-color: midnightblue;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
