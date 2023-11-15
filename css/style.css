@@ -161,8 +161,19 @@ main .container .left-column, main .container .right-column{
 }
 
 .checked {
-    text-decoration: line-through;
+    position: relative;
 }
+
+.checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 0;
+    border-bottom: 1px solid #000;
+    margin-top: -3px;
+}
+
 #clearLocalStorageButton {
     background-color: #3498db;
     color: #fff;
