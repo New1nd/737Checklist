@@ -205,7 +205,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 {id: 50, label: "PRESSURIZATION", subtitle: "LAND ALT___", typeItem: "standard"},
                 {id: 51, label: "AUTOBRAKE", subtitle: "___", typeItem: "standard"},
                 {id: 52, label: "LANDING DATA", subtitle: "VREF___, MINIMUMS___", typeItem: "standard"},
-                {id: 53, label: "LANDING DATA", subtitle: "VREF___, MINIMUMS___", typeItem: "standard"},
+                {id: 53, label: "N1, IAS", subtitle: "CHECKED", typeItem: "standard"},
+                {id: 55, label: "APPROACH BRIEFING", subtitle: "COMPLETED", typeItem: "standard"},
+                {id: 56, label: "RECALL", subtitle: "CHECKED", typeItem: "standard"},
                 // { id: 95, label: "Before Top Of Descent", typeItem: "italic" },
                 //
                 // { id: 96, label: "ATIS / AIRPORT INFO", subtitle: "CHECK", typeItem: "standard" },
@@ -236,8 +238,11 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            title: "APPROACH CHECKLIST",
+            title: "APPROACH",
             items: [
+
+                {id: 57, label: "PASSENGER SIGNS", subtitle: "ON", typeItem: "standard"},
+                {id: 58, label: "ALTIMETERS", subtitle: "___Mb SET, X-CHECKED", typeItem: "standard"},
                 // { id: 113, label: "ALTIMETER", subtitle: "CHECK", typeItem: "standard" },
                 // { id: 114, label: "LOCALIZER FREQUENCY", subtitle: "CHECK", typeItem: "standard" },
                 // { id: 115, label: "LOCALIZER COURSE", subtitle: "CHECK", typeItem: "standard" },
@@ -253,6 +258,11 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "LANDING CHECKLIST",
             items: [
+                {id: 59, label: "CABIN NOTIFICATION", subtitle: "COMPLETED", typeItem: "standard"},
+                {id: 60, label: "ENGINE START SWITCHES", subtitle: "CONT", typeItem: "standard"},
+                {id: 61, label: "SPEED BRAKE", subtitle: "ARMED, GREEN LIGHT", typeItem: "standard"},
+                {id: 62, label: "LANDING GEAR", subtitle: "DOWN, 3 GREEN", typeItem: "standard"},
+                {id: 63, label: "FLAPS", subtitle: "___, GREEN LIGHT", typeItem: "standard"},
                 // { id: 123, label: "GO-AROUND ALTITUDE", subtitle: "SET", typeItem: "standard" },
                 // { id: 124, label: "RWY TURN-OFF LIGHTS", subtitle: "ON", typeItem: "standard" },
                 // { id: 125, label: "LANDING GEAR", subtitle: "CHECK DOWN", typeItem: "standard" },
@@ -261,8 +271,27 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            title: "LANDING ROLL CHECKLIST",
+            title: "SHUTDOWN",
             items: [
+                {id: 64, label: "IRS MODE SELECTORS", subtitle: "OFF", typeItem: "standard"},
+                {id: 65, label: "FUEL PUMPS", subtitle: "OFF", typeItem: "standard"},
+                {id: 66, label: "FASTEN BELTS", subtitle: "OFF", typeItem: "standard"},
+                {id: 67, label: "WINDOW HEAT", subtitle: "OFF", typeItem: "standard"},
+                {id: 68, label: "PROBE HEAT", subtitle: "OFF", typeItem: "standard"},
+                {id: 69, label: "ANTI-ICE", subtitle: "OFF", typeItem: "standard"},
+                {id: 70, label: "ANTI-ICE", subtitle: "OFF", typeItem: "standard"},
+                {id: 71, label: "HYDRAULIC PANEL", subtitle: "SET", typeItem: "standard"},
+                {id: 72, label: "AIR COND", subtitle: "AS REQUIRED", typeItem: "standard"},
+                {id: 73, label: "EXTERIOR LIGHT", subtitle: "AS REQUIRED", typeItem: "standard"},
+                {id: 74, label: "ENGINE START SWITCHES", subtitle: "AUTO", typeItem: "standard"},
+                {id: 75, label: "ENGINE START SWITCHES", subtitle: "OFF", typeItem: "standard"},
+                {id: 76, label: "AUTO BRAKE", subtitle: "OFF", typeItem: "standard"},
+                {id: 77, label: "FLAPS", subtitle: "UP, NO LIGHTS", typeItem: "standard"},
+                {id: 78, label: "PARKING BRAKE", subtitle: "AS REQUIRED", typeItem: "standard"},
+                {id: 79, label: "ENGINE START LEVERS", subtitle: "CUTOFF", typeItem: "standard"},
+                {id: 80, label: "TRANSPONDER", subtitle: "STBY", typeItem: "standard"},
+                {id: 81, label: "WEATHER RADAR", subtitle: "OFF", typeItem: "standard"},
+                {id: 82, label: "* INSTRUMENT LIGHTS", subtitle: "OFF", typeItem: "standard"},
                 // { id: 128, label: "THRUST REVERSE", subtitle: "ENGAGE", typeItem: "standard" },
                 // { id: 129, label: "AUTOPILOT", subtitle: "OFF", typeItem: "standard" },
                 // { id: 130, label: "AUTOTHRUST", subtitle: "OFF", typeItem: "standard" },
@@ -270,49 +299,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 // { id: 132, label: "AT 30 KTS", subtitle: "AUTO-BRAKE DISENGAGE", typeItem: "standard" }
             ]
         },
+        // {
+        //     title: "AFTER LANDING CHECKLIST",
+        //     items: [
+        //         // { id: 133, label: "TRANSPONDER", subtitle: "AS REQUIRED", typeItem: "standard" },
+        //         // { id: 134, label: "FLAPS", subtitle: "RETRACT", typeItem: "standard" },
+        //         // { id: 135, label: "SPEED BRAKE", subtitle: "DOWN", typeItem: "standard" },
+        //         // { id: 136, label: "LANDING LIGHTS", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 137, label: "POSITION LIGHTS", subtitle: "STEADY", typeItem: "standard" },
+        //         // { id: 138, label: "TAXI LIGHTS", subtitle: "ON", typeItem: "standard" },
+        //         // { id: 139, label: "ANTI ICE", subtitle: "AS REQUIRED", typeItem: "standard" },
+        //         // { id: 140, label: "APU", subtitle: "START", typeItem: "standard" },
+        //         // { id: 141, label: "PROBE HEAT", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 142, label: "ENGINE START SWITCHES", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 143, label: "AUTO-BRAKE", subtitle: "OFF", typeItem: "standard" },
+        //         //
+        //         // { id: 144, label: "Taxi To Gate", typeItem: "italic" },
+        //         //
+        //         // { id: 145, label: "RWY TURNOFF LIGHTS", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 146, label: "APU GEN", subtitle: "ON", typeItem: "standard" },
+        //         // { id: 147, label: "TAXI LIGHTS", subtitle: "OFF", typeItem: "standard" },
+        //     ]
+        // },
+        // {
+        //     title: "PARKING / SHUTDOWN CHECKLIST",
+        //     items: [
+        //         // { id: 148, label: "PARKING BRAKES", subtitle: "SET", typeItem: "standard" },
+        //         // { id: 149, label: "ENGINE START LEVERS", subtitle: "CUTOFF", typeItem: "standard" },
+        //         // { id: 150, label: "GROUND OPERATIONS", subtitle: "AS REQUIRED", typeItem: "standard" },
+        //         // { id: 151, label: "PASSENGER SIGNS", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 152, label: "APU BLEED AIR", subtitle: "ON", typeItem: "standard" },
+        //         // { id: 153, label: "ANTI COLLISION LIGHT", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 154, label: "FUEL PUMPS", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 155, label: "ANTI-ICE", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 156, label: "HYDRAULIC PUMPS", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 157, label: "ISOLATION VALVE", subtitle: "OPEN", typeItem: "standard" },
+        //         // { id: 158, label: "FLIGHT DIRECTOR", subtitle: "OFF", typeItem: "standard" },
+        //         // { id: 159, label: "GND POWER", subtitle: "ESTABLISH", typeItem: "standard" },
+        //         // { id: 160, label: "DOORS", subtitle: "OPEN", typeItem: "standard" }
+        //     ]
+        // },
         {
-            title: "AFTER LANDING CHECKLIST",
+            title: "SECURE",
             items: [
-                // { id: 133, label: "TRANSPONDER", subtitle: "AS REQUIRED", typeItem: "standard" },
-                // { id: 134, label: "FLAPS", subtitle: "RETRACT", typeItem: "standard" },
-                // { id: 135, label: "SPEED BRAKE", subtitle: "DOWN", typeItem: "standard" },
-                // { id: 136, label: "LANDING LIGHTS", subtitle: "OFF", typeItem: "standard" },
-                // { id: 137, label: "POSITION LIGHTS", subtitle: "STEADY", typeItem: "standard" },
-                // { id: 138, label: "TAXI LIGHTS", subtitle: "ON", typeItem: "standard" },
-                // { id: 139, label: "ANTI ICE", subtitle: "AS REQUIRED", typeItem: "standard" },
-                // { id: 140, label: "APU", subtitle: "START", typeItem: "standard" },
-                // { id: 141, label: "PROBE HEAT", subtitle: "OFF", typeItem: "standard" },
-                // { id: 142, label: "ENGINE START SWITCHES", subtitle: "OFF", typeItem: "standard" },
-                // { id: 143, label: "AUTO-BRAKE", subtitle: "OFF", typeItem: "standard" },
-                //
-                // { id: 144, label: "Taxi To Gate", typeItem: "italic" },
-                //
-                // { id: 145, label: "RWY TURNOFF LIGHTS", subtitle: "OFF", typeItem: "standard" },
-                // { id: 146, label: "APU GEN", subtitle: "ON", typeItem: "standard" },
-                // { id: 147, label: "TAXI LIGHTS", subtitle: "OFF", typeItem: "standard" },
-            ]
-        },
-        {
-            title: "PARKING / SHUTDOWN CHECKLIST",
-            items: [
-                // { id: 148, label: "PARKING BRAKES", subtitle: "SET", typeItem: "standard" },
-                // { id: 149, label: "ENGINE START LEVERS", subtitle: "CUTOFF", typeItem: "standard" },
-                // { id: 150, label: "GROUND OPERATIONS", subtitle: "AS REQUIRED", typeItem: "standard" },
-                // { id: 151, label: "PASSENGER SIGNS", subtitle: "OFF", typeItem: "standard" },
-                // { id: 152, label: "APU BLEED AIR", subtitle: "ON", typeItem: "standard" },
-                // { id: 153, label: "ANTI COLLISION LIGHT", subtitle: "OFF", typeItem: "standard" },
-                // { id: 154, label: "FUEL PUMPS", subtitle: "OFF", typeItem: "standard" },
-                // { id: 155, label: "ANTI-ICE", subtitle: "OFF", typeItem: "standard" },
-                // { id: 156, label: "HYDRAULIC PUMPS", subtitle: "OFF", typeItem: "standard" },
-                // { id: 157, label: "ISOLATION VALVE", subtitle: "OPEN", typeItem: "standard" },
-                // { id: 158, label: "FLIGHT DIRECTOR", subtitle: "OFF", typeItem: "standard" },
-                // { id: 159, label: "GND POWER", subtitle: "ESTABLISH", typeItem: "standard" },
-                // { id: 160, label: "DOORS", subtitle: "OPEN", typeItem: "standard" }
-            ]
-        },
-        {
-            title: "SECURING AIRCRAFT",
-            items: [
+                {id: 83, label: "EMERGENCY EXIT LIGHT", subtitle: "OFF", typeItem: "standard"},
+                {id: 84, label: "PACKS", subtitle: "OFF", typeItem: "standard"},
+                {id: 85, label: "APU/GROUND POWER", subtitle: "OFF", typeItem: "standard"},
+                {id: 86, label: "BATTERY (after APU shutdown 60 sec delay)", subtitle: "OFF", typeItem: "standard"},
                 // { id: 161, label: "IRS MODE SELECTORS", subtitle: "OFF", typeItem: "standard" },
                 // { id: 162, label: "APU", subtitle: "OFF", typeItem: "standard" },
                 // { id: 163, label: "EMERGENCY EXIT LIGHTS", subtitle: "OFF", typeItem: "standard" },
@@ -322,12 +355,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 // { id: 167, label: "BATTERY", subtitle: "OFF", typeItem: "standard" }
             ]
         },
-        {
-            title: "AIRPORT BAR CHECKLIST",
-            items: [
-                // { id: 168, label: "ORDER DRINK", subtitle: "CHECK", typeItem: "standard" }
-            ]
-        }
+        // {
+        //     title: "AIRPORT BAR CHECKLIST",
+        //     items: [
+        //         { id: 168, label: "ORDER DRINK", subtitle: "CHECK", typeItem: "standard" }
+            // ]
+        // }
     ];
 
     // Функция для создания HTML-элементов чеклиста
