@@ -83,6 +83,10 @@ main .container .left-column, main .container .right-column{
     main .container .left-column, main .container .right-column {
         width: 95%;
     }
+
+    header .container {
+        flex-direction: column-reverse;
+    }
 }
 
 
