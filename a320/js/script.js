@@ -34,7 +34,79 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 {id: 14, label: "FLIGHT CONTROL", subtitle: "CHECKED", typeItem: "standard"},
                 {id: 15, label: "FLAPS SETTING", subtitle: "CONF __", typeItem: "standard"},
-                {id: 16, label: "RADAR & PRED W/S", subtitle: "", typeItem: "standard"},
+                {id: 16, label: "RADAR & PRED W/S", subtitle: "ON & AUTO", typeItem: "standard"},
+                {id: 17, label: "ENG MODE SEL", subtitle: "____", typeItem: "standard"},
+                {id: 18, label: "ECAM MEMO", subtitle: "TO NO BLUE", typeItem: "standard"},
+                {id: 19, label: "ECAM MEMO", subtitle: "TO NO BLUE", typeItem: "standard"},
+
+                {id: 20, label: "AUTO BRK MAX", subtitle: "", typeItem: "italic"},
+                {id: 21, label: "SIGNS ON", subtitle: "", typeItem: "italic"},
+                {id: 22, label: "CABIN READY", subtitle: "", typeItem: "italic"},
+                {id: 23, label: "SPLRS ARM", subtitle: "", typeItem: "italic"},
+                {id: 24, label: "FLAPS TO", subtitle: "", typeItem: "italic"},
+                {id: 25, label: "TO CONFIG NORM", subtitle: "", typeItem: "italic"},
+            ]
+        },
+        {
+            title: "LINE UP",
+            items: [
+                {id: 27, label: "T.O RWY", subtitle: "___", typeItem: "standard"},
+                {id: 28, label: "TCAS", subtitle: "TA/RA", typeItem: "standard"},
+                {id: 29, label: "PACKS 1 & 2", subtitle: "___", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "<< DEPARTURE CHANGE >>",
+            items: [
+                {id: 30, label: "RWY & SID", subtitle: "____", typeItem: "standard"},
+                {id: 31, label: "FLAPS SETTING", subtitle: "CONF____", typeItem: "standard"},
+                {id: 32, label: "T.0 SPEEDS & THRUST", subtitle: "___", typeItem: "standard"},
+                {id: 33, label: "FCU ALT", subtitle: "___", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "APPROACH",
+            items: [
+                {id: 34, label: "BARO REF", subtitle: "____", typeItem: "standard"},
+                {id: 35, label: "SEAT BELTS", subtitle: "ON", typeItem: "standard"},
+                {id: 36, label: "MINIMUM", subtitle: "___", typeItem: "standard"},
+                {id: 37, label: "AUTO BRAKE", subtitle: "___", typeItem: "standard"},
+                {id: 38, label: "ENG MODE SEL", subtitle: "___", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "LANDING",
+            items: [
+                {id: 39, label: "ECAM MEMO", subtitle: "LGD NO BLUE", typeItem: "standard"},
+                {id: 40, label: "LDG GEAR DN", subtitle: "ON", typeItem: "italic"},
+                {id: 41, label: "SIGNS ON", subtitle: "ON", typeItem: "italic"},
+                {id: 42, label: "CABIN READY", subtitle: "", typeItem: "italic"},
+                {id: 43, label: "SPLRS ARM", subtitle: "", typeItem: "italic"},
+                {id: 44, label: "FLAPS SET", subtitle: "", typeItem: "italic"},
+            ]
+        },
+        {
+            title: "AFTER LANDING",
+            items: [
+                {id: 45, label: "RADAR & PRED W/S", subtitle: "OFF", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "PARKING",
+            items: [
+                {id: 46, label: "PARK BRK OR CHOCKS", subtitle: "SET", typeItem: "standard"},
+                {id: 47, label: "ENGINES", subtitle: "OFF", typeItem: "standard"},
+                {id: 48, label: "WING LIGHTS", subtitle: "OFF", typeItem: "standard"},
+                {id: 49, label: "FUEL PUPMS", subtitle: "OFF", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "SECURING THE AIRCRAFT",
+            items: [
+                {id: 50, label: "OXYGEN", subtitle: "OFF", typeItem: "standard"},
+                {id: 51, label: "EMER EXIT LT", subtitle: "OFF", typeItem: "standard"},
+                {id: 52, label: "EFBs", subtitle: "OFF", typeItem: "standard"},
+                {id: 53, label: "BATTERIES", subtitle: "OFF", typeItem: "standard"},
             ]
         },
     ];
