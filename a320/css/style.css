@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main .container{
+    display: flex;
+    gap: 15px;
+}
+
+main .container .left-column, main .container .right-column{
+    width: calc(100% / 2 - 15px);
+}
+
+.block-item{
+    border: 1px solid #000;
+    margin: 20px 0;
+}
+
+.block-item__content{
+    padding: 5px;
+}
+
+.block-item__title{
+    font-weight: bold;
+    height: 30px;
+    background: midnightblue;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.block-item__content .block-item__content__item{
+    display: flex;
+    gap: 3px;
+    margin: 5px 0;
+}
+
+.block-item__content .block-item__content__item .custom-checkbox span{
+    white-space: nowrap;
+}
+
+.block-item__content .block-item__content__item .dotted{
+    width: 100%;
+    border-bottom: 1px dotted #000;
+    margin-top: -10px;
+    height: 24px;
+}
+.block-item__content .block-item__content__item .subtitle{
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox>input:not(:disabled):active+span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span::before {
+    border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox>input:disabled+span::before {
+    background-color: #e9ecef;
+}
+
+.checked {
+    position: relative;
+}
+
+.italic{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 0;
+    border-bottom: 1px solid #000;
+    margin-top: -3px;
+}
+
+#clearLocalStorageButton {
+    background-color: midnightblue;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
