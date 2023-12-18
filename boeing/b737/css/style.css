@@ -87,6 +87,12 @@ main .container .left-column, main .container .right-column{
     header .container {
         flex-direction: column-reverse;
     }
+
+    header .container .title {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
 
