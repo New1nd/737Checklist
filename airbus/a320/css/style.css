@@ -70,6 +70,7 @@ main .container .left-column, main .container .right-column{
     margin-top: -10px;
     height: 24px;
 }
+
 .block-item__content .block-item__content__item .subtitle{
     white-space: nowrap;
 }
