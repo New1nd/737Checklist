@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 {id: 'a320-16', label: "RADAR & PRED W/S", subtitle: "ON & AUTO", typeItem: "standard"},
                 {id: 'a320-17', label: "ENG MODE SEL", subtitle: "____", typeItem: "standard"},
                 {id: 'a320-18', label: "ECAM MEMO", subtitle: "TO NO BLUE", typeItem: "standard"},
-                // {id: 'a320-19', label: "ECAM MEMO", subtitle: "TO NO BLUE", typeItem: "standard"},
+                {id: 'a320-19', label: "APU", subtitle: "OFF", typeItem: "standard"},
 
                 {id: 'a320-20', label: "AUTO BRK MAX", subtitle: "", typeItem: "italic"},
                 {id: 'a320-21', label: "SIGNS ON", subtitle: "", typeItem: "italic"},
