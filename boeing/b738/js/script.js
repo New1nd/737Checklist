@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 {id: 'b738-23', label: "TAKEOFF SPEED", subtitle: "V1__, VR__, V2__", typeItem: "standard"},
                 {id: 'b738-24', label: "CDU PREFLIGHT", subtitle: "COMPLETED", typeItem: "standard"},
                 {id: 'b738-25', label: "RUDDER & AILERON TRIM", subtitle: "FREE & ZERO", typeItem: "standard"},
-                {id: 'b738-25', label: "RUDDER & AILERON TRIM", subtitle: "FREE & ZERO", typeItem: "standard"},
+                // {id: 'b738-25', label: "RUDDER & AILERON TRIM", subtitle: "FREE & ZERO", typeItem: "standard"},
                 {id: 'b738-26', label: "ANTI-COLLISION LIGHT", subtitle: "ON", typeItem: "standard"},
 
                 // {id: 38, label: "Request Pushback & Startup Clearance", typeItem: "italic"},
