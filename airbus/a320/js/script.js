@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "AFTER TAKEOFF",
             items: [
                 {id: 'a320-29-2', label: "PWY LIGHT", subtitle: "OFF", typeItem: "standard"},
+                {id: 'a320-29-3', label: "THRT LVRS", subtitle: "CLIMB", typeItem: "standard"},
             ]
         },
         {
