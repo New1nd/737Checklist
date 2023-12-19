@@ -53,6 +53,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 {id: 'a320-27', label: "T.O RWY", subtitle: "___", typeItem: "standard"},
                 {id: 'a320-28', label: "TCAS", subtitle: "TA/RA", typeItem: "standard"},
                 {id: 'a320-29', label: "PACKS 1 & 2", subtitle: "___", typeItem: "standard"},
+                {id: 'a320-29-1', label: "PWY LIGHT", subtitle: "ON", typeItem: "standard"},
+            ]
+        },
+        {
+            title: "AFTER TAKEOFF",
+            items: [
+                {id: 'a320-29-2', label: "PWY LIGHT", subtitle: "OFF", typeItem: "standard"},
             ]
         },
         {
